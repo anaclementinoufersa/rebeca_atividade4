@@ -6,7 +6,7 @@ st.title('DASHCOVID - Um Painel de Informações sobre a COVID-19 - Ano 2020')
 
 st.set_page_config(page_title = 'DASHCOVID', layout = 'wide')
 
-df = pd.read_csv('WHO_time_series.csv')
+df = pd.read_csv('WHO_time_series(1).csv')
 
 df['Date_reported'] = pd.to_datetime(df['Date_reported'])
 
