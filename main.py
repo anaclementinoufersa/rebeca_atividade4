@@ -10,7 +10,7 @@ df = pd.read_csv('WHO_time_series (1).csv')
 
 df['Date_reported'] = pd.to_datetime(df['Date_reported'])
 
-fig1 = px.line(df, x = 'Date_reported', y = 'Cumulative_cases', color = "Country", title = 'Casos acumulados')
+fig1 = px.line(df, x = 'Date_reported', y = 'Cumulative_cases', color = "Country", title = 'Casos acumulados de Covid para cada país')
 fig1.update_layout(xaxis_title = 'Data', yaxis_title = 'Casos acumulados')
                
 st.plotly_chart(fig1, use_container_width = True)
