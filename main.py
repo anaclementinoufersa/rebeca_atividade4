@@ -4,7 +4,7 @@ import streamlit as st
 
 st.title('DASHCOVID - Um Painel de Informações sobre a COVID-19 - Ano 2020')
 
-st.set_page_config(page_title = 'DASHCOVID', layout = 'wide')
+st.set_page_config(page_title = 'DASHCOVID', layout = 'wide') //Define o texto que aparece na aba do navegador
 
 df = pd.read_csv('WHO_time_series (1).csv')
 
